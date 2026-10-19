@@ -1,0 +1,7 @@
+name,customer_code,customer_type,credit_limit,email,phone,street,city,country_code
+ABC Electronics,CUST-001,wholesale,50000.0,orders@abcelectronics.com,+966501234567,Olaya St,Riyadh,SA
+Hasibat AlArab,CUST-002,wholesale,60000.0,info@hasibat.com,+966502345678,King Fahd Rd,Riyadh,SA
+JabarTech,CUST-003,vip,80000.0,procurement@jabartech.com,+966503456789,Tahlia St,Jeddah,SA
+Banda Retail,CUST-004,retail,20000.0,banda@bandaretail.com,+966504567890,Hira St,Jeddah,SA
+ALOthaim Trading,CUST-005,vip,100000.0,supply@alothaim.com,+966505678901,Dammam Coastal Rd,Khobar,SA
+Al-Noor Retail Mart,CUST-006,retail,15000.0,orders@alnoormart.com,+966506789012,King Abdulaziz St,Riyadh,SA

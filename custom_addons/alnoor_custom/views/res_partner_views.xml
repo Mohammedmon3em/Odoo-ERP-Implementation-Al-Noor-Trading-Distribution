@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_alnoor" model="ir.ui.view">
+        <field name="name">res.partner.form.alnoor</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="customer_code" placeholder="e.g. CUST-001"/>
+                <field name="customer_type" widget="radio" options="{'horizontal': true}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter_alnoor" model="ir.ui.view">
+        <field name="name">res.partner.select.alnoor</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='customer']" position="after">
+                <separator/>
+                <filter string="Retail Customers" name="filter_retail" domain="[('customer_type', '=', 'retail')]"/>
+                <filter string="Wholesale Customers" name="filter_wholesale" domain="[('customer_type', '=', 'wholesale')]"/>
+                <filter string="VIP Customers" name="filter_vip" domain="[('customer_type', '=', 'vip')]"/>
+            </xpath>
+            <xpath expr="//group" position="inside">
+                <filter string="Customer Type" name="group_customer_type" context="{'group_by': 'customer_type'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

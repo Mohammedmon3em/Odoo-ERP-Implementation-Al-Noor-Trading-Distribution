@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_credit_limit_approver" model="res.groups">
+        <field name="name">Credit Limit Approver (Sales Manager / General Manager)</field>
+        <field name="comment">Members of this group can review, approve, and reject sales orders that exceed a customer's credit limit.</field>
+    </record>
+</odoo>

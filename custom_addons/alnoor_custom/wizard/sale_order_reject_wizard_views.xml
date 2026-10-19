@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sale_order_reject_wizard_form" model="ir.ui.view">
+        <field name="name">sale.order.reject.wizard.form</field>
+        <field name="model">sale.order.reject.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Reject Credit Limit Exception">
+                <sheet>
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Warning:</strong> Rejecting this order will prevent it from being confirmed until a new approval request is submitted (BR-104).
+                    </div>
+                    <group>
+                        <field name="order_id" readonly="1"/>
+                        <field name="rejection_reason" placeholder="Enter reason for rejecting this high-value/credit-limit exceeded order..." required="1"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_confirm_rejection" string="Confirm Rejection" type="object" class="btn-danger"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

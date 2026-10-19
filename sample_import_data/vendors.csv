@@ -1,0 +1,5 @@
+name,customer_code,supplier_rank,email,phone,street,city,country_code
+Al-Hamami Electronics,VEND-001,1,sales@alhamami.com,+966506789012,Computer Market,Riyadh,SA
+Gulf Tech Distribution,VEND-002,1,info@gulftechdist.com,+966507890123,Port Commercial Zone,Dammam,SA
+Middle East IT Solutions,VEND-003,1,supplies@meit.com,+966508901234,Airport Road,Jeddah,SA
+Redington Gulf KSA,VEND-004,1,orders.ksa@redington.com,+966509012345,Business Gate,Riyadh,SA
